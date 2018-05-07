@@ -1,0 +1,15 @@
+server:
+  port: 8999
+  servlet:
+    context-path: /banksy
+config:
+  database:
+    url: ${app.driverClassName}
+    driver: ${app.jdbcUrl}
+    username: ${app.username}
+    password: ${app.password}
+    connectionTimeout: 30000
+    idleTimeout: 600000
+    maxLifetime: 1800000
+    maximumPoolSize: 60
+    minimumIdle: 10
